@@ -1,0 +1,17 @@
+7921531 HEAD@{0}: checkout: moving from main to master
+50d9a9e HEAD@{1}: checkout: moving from master to main
+7921531 HEAD@{2}: checkout: moving from develop to master
+7921531 HEAD@{3}: commit (merge): merged images
+1fb43c1 HEAD@{4}: merge images: Fast-forward
+80668c6 HEAD@{5}: checkout: moving from styles to develop
+2cf1b3d HEAD@{6}: commit: added styles to index
+a0194db HEAD@{7}: commit: added styles
+80668c6 HEAD@{8}: checkout: moving from develop to styles
+80668c6 HEAD@{9}: checkout: moving from images to develop
+1fb43c1 HEAD@{10}: commit: added source imges into index
+c343a89 HEAD@{11}: commit: added images
+80668c6 HEAD@{12}: checkout: moving from develop to images
+80668c6 HEAD@{13}: commit: added index.html
+50d9a9e HEAD@{14}: checkout: moving from main to develop
+50d9a9e HEAD@{15}: commit: added readme
+fd4090a HEAD@{16}: clone: from github.com:hamsterr/DevOps_online_Kyiv_2022Q1Q2.git
