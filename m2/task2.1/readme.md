@@ -13,4 +13,40 @@
 
     1.3 ![alt Download latest Ubuntu](/m2/task2.1/images/1_3.png)
 
-    1.4 ![alt Create VM1](/m2/task2.1/images/1_4.png)
+    1.4 
+    ![alt Create VM1](/m2/task2.1/images/1_4.png)
+
+    1.5 Got acquainted with possibilities of VM1 control
+    ![alt Create VM1](/m2/task2.1/images/1_5_1.png)
+    ![alt Create VM1](/m2/task2.1/images/1_5_2.png)
+    ![alt Create VM1](/m2/task2.1/images/1_5_3.png)
+
+    1.6
+
+    ![alt Create VM1 clone VM2](/m2/task2.1/images/1_6.png)
+
+    1.7 
+
+    ![alt Create group of  VM1, VM2](/m2/task2.1/images/1_7.png)
+
+    1.8 Snaphot4 in poweredoff state and than started in Headless mode
+
+     ![alt Create group of  VM1, VM2](/m2/task2.1/images/1_8.png)
+
+    1.9 
+    + Export
+    ![alt Export  VM2](/m2/task2.1/images/1.9.png)
+    + Import
+    ![alt Import VM2](/m2/task2.1/images/1_9_1.png)
+2. Configuration of VMs
+
+    2.1 Done
+
+    2.2 ![alt Connect USB](/m2/task2.1/images/2_2.png)
+
+    2.3 Installed Guest Additions
+  
+    ![alt Added shared folder](/m2/task2.1/images/2_3_1.png)
+
+    ![alt Check shared folder](/m2/task2.1/images/2_3_2.png)
+
