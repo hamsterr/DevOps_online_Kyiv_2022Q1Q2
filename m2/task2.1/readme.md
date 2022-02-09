@@ -85,5 +85,28 @@
     After executing commabd *VBoxManage clonevm* it's needed to register cloned machine
 
     ![alt registervm](/m2/task2.1/images/2_5_5.png)
+# **Part3. Work with vagrant**
+
+ 1. dnf install vagrant
+
+ 2. ![alt mkdir vagrant_test](/m2/task2.1/images/3.2.png)
+
+ 3. ![alt vagrant init](/m2/task2.1/images/3.3.png)
+
+ 4. ![alt vagrant init](/m2/task2.1/images/3.4.png)
+
+ 5. ![alt ssh vagrant machine](/m2/task2.1/images/3.5.png)
+
+ 6. ![alt date](/m2/task2.1/images/3.6.png)
+
+ 7. ![alt stop and delete vagrant machine](/m2/task2.1/images/3.7.png)
+
+ 8. ![alt stop and delete vagrant machine](/m2/task2.1/images/3.8.png)
+ 
+ 9. Added m2/task2.1/Vagrantfile which allows to up 2 Ubuntu 20.04 machines one is clean and second with nginx installed.
+ 
+   ![alt stop and delete vagrant machine](/m2/task2.1/images/3.9.png)
+   
+
 
 
