@@ -42,11 +42,48 @@
 
     2.1 Done
 
-    2.2 ![alt Connect USB](/m2/task2.1/images/2_2.png)
+    2.2 
+
+    ![alt Connect USB](/m2/task2.1/images/2_2.png)
 
     2.3 Installed Guest Additions
   
     ![alt Added shared folder](/m2/task2.1/images/2_3_1.png)
 
     ![alt Check shared folder](/m2/task2.1/images/2_3_2.png)
+
+    2.4  ![alt Test network modes](/m2/task2.1/images/Vboxnet.png)
+
+    +  Test NAT modes and portforward
+
+        ![alt Test network modes](/m2/task2.1/images/2_4_1.png)
+
+        ![alt Test network modes](/m2/task2.1/images/2_4_2.png)
+
+        ![alt Test network modes](/m2/task2.1/images/2_4_3.png)
+
+    + Dchp server settings and hostonly nad internal net modes
+
+        ![alt hostonly settings](/m2/task2.1/images/2_4_4.png)
+
+        ![alt Dchp server settings](/m2/task2.1/images/2_4_5.png)
+    
+3. Work with CLI through VboxManage 
+    
+    3.1 I am running Linux CLI.
+    
+    3.2 VBoxManage basic commands
+     
+    ![alt list vms](/m2/task2.1/images/2_5_1.png)
+
+    ![alt createvm](/m2/task2.1/images/2_5_2.png)
+
+    ![alt controlvm](/m2/task2.1/images/2_5_3.png)
+
+    ![alt startvm](/m2/task2.1/images/2_5_4.png)
+
+    After executing commabd *VBoxManage clonevm* it's needed to register cloned machine
+
+    ![alt registervm](/m2/task2.1/images/2_5_5.png)
+
 
