@@ -25,16 +25,22 @@
     ![alt launch ec2 instatnce](/m2/task2.2/images/12.png)
     ![alt launch ec2 instatnce](/m2/task2.2/images/12_1.png)
     ![alt launch ec2 instatnce](/m2/task2.2/images/12_2.png)
-13. ![alt launch ec2 instatnce](/m2/task2.2/images/13.png)
-    ![alt launch ec2 instatnce](/m2/task2.2/images/13_1.png)
-    ![alt launch ec2 instatnce](/m2/task2.2/images/13_2.png)
-    ![alt launch ec2 instatnce](/m2/task2.2/images/13_4.png)
-    ![alt launch ec2 instatnce](/m2/task2.2/images/13_5.png)
+13.  
+    + **By web intreface**
+     ![alt launch ec2 instatnce](/m2/task2.2/images/13.png)
+        ![alt launch ec2 instatnce](/m2/task2.2/images/13_1.png)
+        ![alt launch ec2 instatnce](/m2/task2.2/images/13_2.png)
+         ![alt launch ec2 instatnce](/m2/task2.2/images/13_4.png)
+        ![alt launch ec2 instatnce](/m2/task2.2/images/13_5.png)
+
+    + **By cli using docker**
+
 14.
     ![alt launch ec2 instatnce](/m2/task2.2/images/14.png)
     ![alt launch ec2 instatnce](/m2/task2.2/images/14_1.png)
 
-15. http://sergiikrupenko.pp.ua
+15. 
+https://task22website.s3.amazonaws.com/index.html
 
 `https://amazon.qwiklabs.com`
 
