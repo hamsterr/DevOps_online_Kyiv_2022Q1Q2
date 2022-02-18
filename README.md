@@ -5,3 +5,9 @@
 ## Module 2 DevOps Introduction
 + [task2.1](m2/task2.1/readme.md)
 + [task2.2](m2/task2.2/readme.md)
+
+## Module 3 Networking Fundamentals
++ [task3.1](m3/task3.1/readme.md)
++ [task3.2](m3/task3.2/readme.md)
++ [task3.3](m3/task3.3/readme.md)
++ [task3.4](m3/task3.4/readme.md)

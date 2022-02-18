@@ -34,7 +34,9 @@
     ![alt launch ec2 instatnce](/m2/task2.2/images/14.png)
     ![alt launch ec2 instatnce](/m2/task2.2/images/14_1.png)
 
-15. `https://amazon.qwiklabs.com`
+15. http://sergiikrupenko.pp.ua
+
+`https://amazon.qwiklabs.com`
 
 + Introduction to AWS Identity and Access Management (IAM)
 + Introduction to Amazon Simple Storage Service (S3) 
