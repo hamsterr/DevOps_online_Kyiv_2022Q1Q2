@@ -42,5 +42,5 @@
     ![alt DC  network](/m3/task3.2/images/10.PNG)
 
 12. ![alt DC  network](/m3/task3.2/images/12.PNG)
-14. ![alt DC  network](/m3/task3.2/images/14-16.PNG)
 
+14. ![alt DC  network](/m3/task3.2/images/14-16.PNG)
