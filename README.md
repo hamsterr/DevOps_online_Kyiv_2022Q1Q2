@@ -11,3 +11,8 @@
 + [task3.2](m3/task3.2/readme.md)
 + [task3.3](m3/task3.3/readme.md)
 + [task3.4](m3/task3.4/readme.md)
+
+## Module 4 Linux Essentials
++ [task4.1](m4/task4.1/readme.md)
++ [task4.2](m4/task4.2/readme.md)
++ [task4.3](m4/task4.3/readme.md)
