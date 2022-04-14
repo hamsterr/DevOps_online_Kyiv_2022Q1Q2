@@ -1,5 +1,5 @@
 ### Linux Essentials  Task2
-### Linux Essentials  Task2
+
 1. /etc/passwd  - list of all registered users
    /etc/groups - list of all groups of users
 Users existing in system: standart users and pseudo-users. 
