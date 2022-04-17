@@ -53,9 +53,13 @@
 16. **kill -signal pid** - command which sends some stop signal to process. Typical signals: *SIGTERM* - sends terminate request to process, used by deafult in kill command
 *SIGKILL* - terminates process and child processes immediately 
 *SIGSTOP* - stops process execution untill SIGCONT will be sent.
-17. **jobs** - shows list of running tasks
+17. 
+    **jobs** - shows list of running tasks
     **fg [task number]** - moves task from background to foreground
     **bg [task number]** -  moves task from foreground to background
+
     ![alt top interactive](images/t3_17.png)
+    
+### Linux Essentials  Task3 Part2
 
     
