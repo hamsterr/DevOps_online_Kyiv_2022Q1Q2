@@ -85,7 +85,7 @@
 
 4.  ![alt port fw nat](images/t3_p2_3_4.png)
 
-     ![alt port fw nat](images/t3_p2_3_4_1.png)
+     ![alt port fw nat](images/t3_p2_3_4.png)
      
      
 
