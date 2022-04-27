@@ -16,3 +16,10 @@
 + [task4.1](m4/task4.1/readme.md)
 + [task4.2](m4/task4.2/readme.md)
 + [task4.3](m4/task4.3/readme.md)
+
+
+## Module 5 Linux Networking
++ [task5.1](m5/task5.1/readme.md)
+
+## Module 6 Linux Bash
++ [task6.1](m6/task6.1/readme.md)
