@@ -8,11 +8,14 @@
 | Net4    	| 172.16.20.0/24 	|
 
 1. 
+
 | Server1   Interface 	| Address        	|
 |---------------------	|----------------	|
 | Int1                	| 192.168.22.200 	|
 | Int2                	| 10.88.20.1     	|
 | Int3                	| 10.4.20.1      	|
+
+  ![alt Server1 addressing](images/t5_1.png)
 
 
 2.
