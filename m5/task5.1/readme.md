@@ -39,3 +39,22 @@
     ![alt trace](images/t5_3_1.png) 
 4. 
    ![alt routing](images/t5_4.png) 
+5. 
+     Summarised route is 172.17.0.0/18
+     ![alt routing](images/t5_5.png)
+6. 
+     ![alt ssh](images/t5_6.png)
+7.  
+    I'm added command in iptables that blocks  SSH on interface to Client2
+     
+    *iptables -A INPUT -i eth2 -p tcp --dport 22 -j DROP*
+
+    ![alt block ssh](images/t5_7.png)
+    
+    *iptables -A FORWARD -p icmp -d 172.17.40.1 -j REJECT*
+
+     ![alt block icmp](images/t5_7_2.png)
+8. 
+    *iptables -t nat -A POSTROUTING  -j MASQUERADE*
+  
+    ![alt NAT](images/t5_8.png)
