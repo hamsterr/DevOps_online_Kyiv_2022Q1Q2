@@ -25,5 +25,5 @@
 + [task6.1](m6/task6.1/readme.md)
 ## Module 7 Database Administration
 + [task7.1](m7/task7.1/readme.md)
-+ ## Module 8 Pythom Task
+## Module 8 Python Task
 + [task8.1](m8/task8.1/readme.md)
