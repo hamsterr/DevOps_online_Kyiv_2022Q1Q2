@@ -1,0 +1,64 @@
+version: 0.2
+
+env:
+  variables:
+    CI: "true"
+    REPOSITORY_REGION: "eu-central-1"
+    ENV: "dev"
+    APP_NAME: "mydemoapp"
+    APP_DIR: "app"
+    TERRAFORM_VERSION: "1.2.3"
+    TERRAGRUNT_VERSION: "0.38.1"
+    REGISTRY_ID: "281750582201"
+    
+phases:
+  pre_build:
+    commands:
+      - curl -sSL "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" -o terraform.zip
+      - unzip terraform.zip -d /usr/local/bin && chmod +x /usr/local/bin/terraform
+      - export REPO_NAME="${REGISTRY_ID}.dkr.ecr.${REPOSITORY_REGION}.amazonaws.com/${APP_NAME}-${ENV}"
+      - curl -sSL https://github.com/gruntwork-io/terragrunt/releases/download/v${TERRAGRUNT_VERSION}/terragrunt_linux_amd64 -o terragrunt
+      - mv terragrunt /usr/local/bin/ && chmod +x /usr/local/bin/terragrunt
+      - pip install jq
+      - echo "Getting existing tag "
+      - export SERVICE_ARN=$(aws ecs list-services --cluster ${APP_NAME}-${ENV}-cluster | jq -r .serviceArns[])
+      - export TASKDEF_ARN=$(aws ecs describe-services --cluster ${APP_NAME}-${ENV}-cluster --service ${SERVICE_ARN} | jq -r .services[].taskDefinition)
+      - export EXISTING_TAG=$(aws ecs describe-task-definition --task-definition ${TASKDEF_ARN} | jq -r .taskDefinition.containerDefinitions[].image | tr ':' ' ' | awk '{print $2}')
+      - echo "Current version is ${EXISTING_TAG}"
+      
+  build:
+    commands:
+      - echo "Build and push docker images"
+      - cd "${CODEBUILD_SRC_DIR}/${APP_DIR}"
+      - export TAG="${CODEBUILD_RESOLVED_SOURCE_VERSION}-${ENV}"
+      - echo "Building version ${TAG}"
+      - aws ecr get-login-password --region ${REPOSITORY_REGION} | docker login --username AWS --password-stdin ${REGISTRY_ID}.dkr.ecr.${REPOSITORY_REGION}.amazonaws.com
+      - echo "reponame ${REPO_NAME}"
+      - echo "${CODEBUILD_SRC_DIR}"
+      - docker build -t ${REPO_NAME}:${TAG} -f ./Dockerfile .
+      - docker push ${REPO_NAME}:${TAG}
+      - cd ${CODEBUILD_SRC_DIR}/
+      - terragrunt init --terragrunt-working-dir env/${ENV}/ecs/
+      - terragrunt plan  --terragrunt-working-dir env/${ENV}/ecs/ -var="app_tag=${TAG}" -no-color -input=false -out plan.out
+      - terragrunt apply --terragrunt-working-dir env/${ENV}/ecs/ -auto-approve -no-color -input=false plan.out
+  post_build:
+    commands:
+      - | 
+        if [ $CODEBUILD_BUILD_SUCCEEDING != 0 ]; then
+          NEWTAG=''
+          while [ "${NEWTAG}" != "${TAG}" ]; 
+          do 
+            NEW_ARN=$(aws ecs list-services --cluster ecs-${APP_NAME}-${ENV} | jq -r .serviceArns[])
+            NEW_TASKDEF=$(aws ecs describe-services --cluster ecs-${APP_NAME}-${ENV} --service ${NEW_ARN} | jq -r .services[].taskDefinition)
+            NEWTAG=$(aws ecs describe-task-definition --task-definition ${NEW_TASKDEF} | jq -r .taskDefinition.containerDefinitions[].image | tr ':' ' ' | awk '{print $2}')
+            echo "Waiting until new image started... Tag: ${TAG} New tag: ${NEWTAG}"
+            if [ "${NEWTAG}" != ${TAG} ]; then
+              sleep 10
+            fi
+            echo ${NEWTAG}
+            echo ${NEW_TASKDEF}
+          done
+        else
+          echo "Build failed"
+        fi
+      - echo "Cluster has been deployed"
