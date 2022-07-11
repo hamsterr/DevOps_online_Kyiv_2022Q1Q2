@@ -1,4 +1,6 @@
-**Налаштування DHCP, DNS, NAT**
+## Module 3 Networking Fundamentals  
+### Task3.4
+**Configuration of DHCP, DNS, NAT**
 
 2. 
 ![alt NAT](/m3/task3.4/images/3_4_2.PNG)

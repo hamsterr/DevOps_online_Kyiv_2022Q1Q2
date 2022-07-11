@@ -1,4 +1,5 @@
-# **Task1 of module1**
+## Module 1 DevOps Introduction
+### Task 1.1
 In this repo I created 4 branches:
 + **master**
 + **develop**

@@ -1,4 +1,5 @@
-# **Part1. Hypervisors**
+## Module 2 Virtualization and Cloud Basic
+### Task 2.1
 1. Most of the big players in the virtualization market offer products for desktop users and for enterprises. The top of most popular hypervisors is VMware VSphere/ ESXi/ Workstation, Microsoft  Hyper-V, Xen / Citrix XenServer, Oracle VM Virtualbox, QEMU, KVM, etc.
 
 2. We can identify two main types of hypervisors. Type 1 - embedded hypervisor runs directly on the system hardware. Type 2 runs in a host operating system that provides virtualization services, such as I/O device support and memory management. But virtualization technology has a different type of classification. So we will describe the main difference between top hypervisors:

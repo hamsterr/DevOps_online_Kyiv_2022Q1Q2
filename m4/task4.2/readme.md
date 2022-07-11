@@ -1,4 +1,5 @@
-### Linux Essentials  Task2
+## Module 4 Linux Essentials  
+### Task4.2
 
 1. /etc/passwd  - list of all registered users
    /etc/groups - list of all groups of users

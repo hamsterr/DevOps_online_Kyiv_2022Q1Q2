@@ -1,4 +1,5 @@
-### Linux Bash Task
+## Module 6 Linux Administration with Bash
+### Task 6.1
 
 1) t611.sh
 2) t612.sh
