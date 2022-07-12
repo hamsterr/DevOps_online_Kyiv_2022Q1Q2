@@ -24,5 +24,20 @@
 
  ![alt task7181](/m7/images/t7181.png)
 + task 7.1.9
- ![alt task716](/m7/images/t719.png)
+ ![alt task719](/m7/images/t719.png)
 
+### Task 7.2
++ task 7.1.10
+ ![alt task7110](/m7/images/t7110.png)
++ task 7.1.11
+ ![alt task7111](/m7/images/t7111.png)
++ task 7.1.12
+ ![alt task7112](/m7/images/t7112.png)
++ task 7.1.13
+ ![alt task7113](/m7/images/t7113.png)
++ task 7.1.14
+ ![alt task7114](/m7/images/t7114.png)
++ task 7.1.15
+ ![alt task7115](/m7/images/t7115.png)
++ task 7.1.16
+ ![alt task7116](/m7/images/t7116.png)
