@@ -12,7 +12,7 @@ locals {
   aws_region = "eu-central-1"
   instance_type        = "t2.micro"
   app_tag              = "new"
-  github_url = ""
+  github_url = "https://github.com/hamsterr/DevOps_online_Kyiv_2022Q1Q2.git"
   github_head_ref = "dev"
   github_branch   = "dev"
   github_event  = "PUSH"
