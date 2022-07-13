@@ -7,7 +7,7 @@
       "image": "${ecr_url}:${app_tag}",
       "portMappings": [
         {
-          "hostPort": 80,
+          "hostPort": 0,
           "protocol": "tcp",
           "containerPort": 80
         }
