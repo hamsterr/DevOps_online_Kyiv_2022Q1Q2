@@ -45,7 +45,7 @@ resource "aws_codebuild_project" "this" {
   }
 
   source {
-    buildspec           = "env/${var.env}/buildspec.yml"
+    buildspec           = "m9/task9.1/env/${var.env}/buildspec.yml"
     type                = "GITHUB"
     location            = var.github_url
     git_clone_depth     = 1

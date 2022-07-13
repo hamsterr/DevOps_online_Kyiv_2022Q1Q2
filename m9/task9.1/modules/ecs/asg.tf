@@ -41,19 +41,10 @@ resource "aws_autoscaling_group" "ecs_asg" {
 resource "aws_security_group" "instance" {
   vpc_id = aws_vpc.default.id
   name   = "node-sg-${var.app_name}-${var.env}"
-  dynamic "ingress" {
-    for_each = var.sg_asg_ingress_ports
-    content {
-      from_port   = ingress.value
-      to_port     = ingress.value
-      protocol    = "tcp"
-      cidr_blocks = ["0.0.0.0/0"]
-    }
-  }
   ingress {
-    from_port   = -1
-    to_port     = -1
-    protocol    = "icmp"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
   egress {

@@ -3,7 +3,7 @@ locals {
   env = "dev"
   cidr        = "172.34.0.0/16"
   sg_alb_ingress_ports = ["80"]
-  sg_asg_ingress_ports = ["80"]
+  sg_asg_ingress_ports = ["0"]
   app_name = "apache"
   ecs_name = "final_demo"
   app_dir = "app"
@@ -13,8 +13,8 @@ locals {
   instance_type        = "t2.micro"
   app_tag              = "new"
   github_url = "https://github.com/hamsterr/DevOps_online_Kyiv_2022Q1Q2.git"
-  github_head_ref = "dev"
-  github_branch   = "dev"
+  github_head_ref = "develop"
+  github_branch   = "develop"
   github_event  = "PUSH"
   app_count = 2
   codebuild_env_vars = {
