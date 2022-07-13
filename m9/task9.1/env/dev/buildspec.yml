@@ -38,9 +38,9 @@ phases:
       - docker build -t ${REPO_NAME}:${TAG} -f ./Dockerfile .
       - docker push ${REPO_NAME}:${TAG}
       - cd ${CODEBUILD_SRC_DIR}/
-      - terragrunt init --terragrunt-working-dir env/${ENV}/ecs/
-      - terragrunt plan  --terragrunt-working-dir env/${ENV}/ecs/ -var="app_tag=${TAG}" -no-color -input=false -out plan.out
-      - terragrunt apply --terragrunt-working-dir env/${ENV}/ecs/ -auto-approve -no-color -input=false plan.out
+      - terragrunt init --terragrunt-working-dir m9/task9.1/env/${ENV}/ecs/
+      - terragrunt plan  --terragrunt-working-dir m9/task9.1/env/${ENV}/ecs/ -var="app_tag=${TAG}" -no-color -input=false -out plan.out
+      - terragrunt apply --terragrunt-working-dir m9/task9.1/env/${ENV}/ecs/ -auto-approve -no-color -input=false plan.out
   post_build:
     commands:
       - | 
