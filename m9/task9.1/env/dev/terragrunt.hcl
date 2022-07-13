@@ -6,7 +6,7 @@ locals {
   sg_asg_ingress_ports = ["0"]
   app_name = "apache"
   ecs_name = "final_demo"
-  app_dir = "app"
+  app_dir = "m9/task9.1/app"
   aws_profile = "default"
   aws_account = "281750582201"
   aws_region = "eu-central-1"

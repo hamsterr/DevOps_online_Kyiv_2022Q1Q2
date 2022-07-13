@@ -6,7 +6,7 @@ env:
     REPOSITORY_REGION: "eu-central-1"
     ENV: "dev"
     APP_NAME: "mydemoapp"
-    APP_DIR: "app"
+    APP_DIR: "m9/task9.1/app"
     TERRAFORM_VERSION: "1.2.3"
     TERRAGRUNT_VERSION: "0.38.1"
     REGISTRY_ID: "281750582201"
