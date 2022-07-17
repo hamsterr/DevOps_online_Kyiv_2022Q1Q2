@@ -5,7 +5,7 @@ locals {
   sg_alb_ingress_ports = ["80"]
   sg_asg_ingress_ports = ["80"]
   app_name = "apache"
-  app_dir = "app"
+  app_dir = "m9/task9.1/app"
   ecs_name = "final_demo"
   aws_profile = "default"
   aws_account = "281750582201"
