@@ -71,26 +71,6 @@ remote_state {
 }
 terraform {
 
-  //after_hook "remove_lock_windows" {
-   // commands = get_platform() == "windows" ? [
-  //    "apply",
-  //    "console",
-  //    "destroy",
-  //    "import",
- //     "init",
- //     "plan",
- //     "push",
-     // "refresh",
- //   ] : []
-
-  //  execute = [
-     // "Powershell.exe",
-     // "Remove-Item",
-     // "${get_terragrunt_dir()}/.terraform.lock.hcl",
-  //  ]
-//
- //   run_on_error = true
-//  }
   after_hook "remove_lock_linux" {
     commands = get_platform() != "windows" ? [
       "apply",
